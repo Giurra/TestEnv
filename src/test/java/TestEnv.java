@@ -33,5 +33,4 @@ public class TestEnv {
         Assert.assertEquals("RoadToQA – Just another WordPress site", driver.getTitle());
         System.out.println("All OK: " + driver.getTitle());
     }
-
 }
