@@ -21,3 +21,5 @@ before_script:
   - "/etc/init.d/xvfb start"
 after_script:
   - "/etc/init.d/xvfb stop"
+  
+  npm test
