@@ -10,4 +10,4 @@ jdk:
 
 # Maven
 install:
-mvn install -DskipTests=true:
+mvn install -DskipTests=true
