@@ -18,7 +18,8 @@ public class TestEnv {
     public void setUp() {
         //System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         //driver = new ChromeDriver();
-        driver = new HtmlUnitDriver();
+        //driver = new HtmlUnitDriver();
+        driver = new FirefoxDriver();
         //driver = new PhantomJSDriver();
     }
 
