@@ -9,5 +9,5 @@ jdk:
  - oraclejdk8
 
 # Maven
-before_install
+install:
 mvn install -DskipTests=true:
