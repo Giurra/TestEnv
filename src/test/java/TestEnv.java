@@ -31,7 +31,7 @@ public class TestEnv {
     @Test
     public void testEnv() {
         driver.get("http://giurra.org/roadtoqa/");
-        Assert.assertEquals("RoadToQA – Just another WordPress site", driver.getTitle());
+        Assert.assertEquals("RoadToQA – Just another WordPress site ", driver.getTitle());
         System.out.println("All OK: " + driver.getTitle());
     }
 }
