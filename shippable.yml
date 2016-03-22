@@ -1,0 +1,12 @@
+# language setting
+language: java
+
+# jdk tag
+jdk:
+ - openjdk7
+ - oraclejdk7
+ - openjdk6
+ - oraclejdk8
+
+# Maven
+mvn install -DskipTests=true
