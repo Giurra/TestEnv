@@ -6,6 +6,8 @@ addons:
 services:
   - selenium
 before_script:
+  - "apt-get update"
+  - "apt-get install -y xvfb"
   - "export DISPLAY=:99.0"
   - "/etc/init.d/xvfb start"
 after_script:
