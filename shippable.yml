@@ -1,14 +1,17 @@
 # language setting
 language: java
 
+
+#specify required selenium and firefox version
 addons:
-   firefox: "23.0"
+  selenium: "2.43"
+  firefox: "27.0"
+
+#start the selenium server
 services:
   - selenium
-before_script:
-  - "apt-get update"
-  - "apt-get install -y xvfb"
-  - "export DISPLAY=:99.0"
-  - "/etc/init.d/xvfb start"
-after_script:
-  - "/etc/init.d/xvfb stop"
+
+build:
+  ci:
+    - "export DISPLAY=:99.0"
+    - "/etc/init.d/xvfb start"
