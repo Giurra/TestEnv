@@ -2,16 +2,12 @@
 language: java
 
 
-#specify required selenium and firefox version
 addons:
-  selenium: "2.43"
-  firefox: "27.0"
-
-#start the selenium server
+   firefox: "23.0"
 services:
   - selenium
-
-script:
-  - sudo npm install
-  - export DISPLAY=:99.0
-  - xvfb-run --server-args="-ac" npm test
+before_script:
+  - "export DISPLAY=:99.0"
+  - "/etc/init.d/xvfb start"
+after_script:
+  - "/etc/init.d/xvfb stop"
