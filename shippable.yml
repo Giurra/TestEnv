@@ -1,19 +1,8 @@
 # language setting
 language: java
 
-# jdk tag
-jdk:
- - openjdk7
- - oraclejdk7
- - openjdk6
- - oraclejdk8
-
-# Maven
-#install:
-#mvn install -DskipTests=true;
-
 addons:
-   firefox: "44.0"
+   firefox: "23.0"
 services:
   - selenium
 before_script:
